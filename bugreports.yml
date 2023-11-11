@@ -1,1 +1,13 @@
-
+---
+- summary: |
+    Не работает поиск по категории
+  environment: |
+    Google Chrome   119.0.6045.124 (Официальная сборка), (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Открыть https://hexlet-products-store.vercel.app/
+    2. Ввести в поиск "laptops"
+  expected-result: |
+    Отобразились только товары с категорией laptops
+  actual-result: |
+    Ни один товар не отображается
