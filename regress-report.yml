@@ -1,4 +1,5 @@
 ---
+test-cases:
 - summary: |
     Проверка возможности фильтрации товаров
   status: pass
