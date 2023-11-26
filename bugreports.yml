@@ -24,3 +24,27 @@
     На сниппете товара отображается рейтинг
   actual-result: |
     На сниппете товара не отображается рейтинг
+
+- summary: |
+    Некорректное отображение сайта в мобильном устройстве
+  environment: |
+    iPhone 13
+  steps-to-reproduce: |
+    1. Открыть https://hexlet-products-store.vercel.app/ на мобильном устройстве
+  expected-result: |
+    Сайт корректно отображается
+  actual-result: |
+    Сайт отображается некорректно
+
+- summary: |
+    При фильтрации по стоимости учитывается цена без скидки
+  environment: |
+    Google Chrome   119.0.6045.124 (Официальная сборка), (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Открыть https://hexlet-products-store.vercel.app/
+    2. Установить фильтр Price= от 400 до 500
+  expected-result: |
+    Отображаются все товары со стоимостью 400-500
+  actual-result: |
+    Товар https://hexlet-products-store.vercel.app/products/1 не отобразился в выдаче, хотя его цена 477,85 со скидкой (549 без скидки)
