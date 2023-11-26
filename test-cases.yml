@@ -33,9 +33,9 @@
   prerequisites: |
     Пользователь находится на главной странице
   test-data: |
-фильтр Category="smartphones" фильтр "Бренд" = "Apple" фильтр "In stock"=включен фильтр "Price"=от 100 до 500
+NA
   steps:
-    - установить для филльтров значения согласно test-data
+    - установить значения фильтров Category="smartphones" "Бренд" = "Apple" "In stock"=включен "Price"=от 100 до 500
   expected-result: |
     Отображаются товары в соответствии с установленными фильтрами
 
