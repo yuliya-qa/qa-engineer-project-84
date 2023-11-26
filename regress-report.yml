@@ -37,7 +37,7 @@
   status: pass
 
   bugreports:
-  - summary: |
+- summary: |
     Не работает поиск по категории
   environment: |
     Google Chrome   119.0.6045.124 (Официальная сборка), (64 бит)
