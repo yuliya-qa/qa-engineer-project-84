@@ -46,7 +46,8 @@
   prerequisites: |
     Пользователь находится на главной странице
   test-data: |
-    фильтр "Бренд" = "Apple"
+	фильтр Category="smartphones"
+   	фильтр "Бренд" = "Apple"
 	фильтр "In stock"=включен
 	фильтр "Price"=от 100 до 500
   steps:
