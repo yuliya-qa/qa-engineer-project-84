@@ -10,7 +10,7 @@
   status: fail
 - summary: |
     Проверка возможности фильтрации товаров в каталоге
-  status: pass
+  status: fail
 - summary: |
     Проверка наличия мобильной версии сайта
   status: fail
