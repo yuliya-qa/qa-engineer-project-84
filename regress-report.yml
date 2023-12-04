@@ -45,22 +45,22 @@ bugreports:
     ОС Windows 10
   steps-to-reproduce: |
     1. Открыть https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    2. Ввести в поиск "laptops"
+    2. Ввести в поиск категорию, например, laptops
   expected-result: |
     Отобразились только товары с категорией laptops
   actual-result: |
     Отображаются товары всех категорий
 
 - summary: |
-    На сниппете товара в каталоге не отображается его рейтинг
+    На сниппете товара в каталоге не отображается его рейтинг  
   environment: |
     Google Chrome   119.0.6045.124 (Официальная сборка), (64 бит)
     ОС Windows 10
   steps-to-reproduce: |
-    1. Открыть https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    1. Открыть https://hexlet-products-store.vercel.app/
     2. Проверить наличие рейтинга на сниппете товара в каталоге
   expected-result: |
-    На сниппете товара отображается рейтинг
+    На сниппете товара отображается рейтинг согласно ТРЕБОВАНИЮ "На странице товара и в каталоге нужно выводить название, рейтинг, цена со скидкой и без нее"
   actual-result: |
     На сниппете товара не отображается рейтинг
 
