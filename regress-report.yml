@@ -90,7 +90,7 @@ bugreports:
   actual-result: |
     Ошибка 500 при попытке оформить заказ
 
-    - summary: |
+- summary: |
     Модальное окно Order placed successfully не закрывается при клике на крестик (Х)
   environment: |
     Google Chrome   119.0.6045.124 (Официальная сборка), (64 бит)
