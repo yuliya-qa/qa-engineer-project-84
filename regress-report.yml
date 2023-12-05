@@ -73,3 +73,36 @@ bugreports:
     Отображаются все товары со стоимостью 400-500
   actual-result: |
     Товар https://hexlet-products-store.vercel.app/products/1 не отобразился в выдаче, хотя его цена 477,85 со скидкой (549 без скидки)
+
+- summary: |
+    Ошибка 500 при попытке оформить заказ
+  environment: |
+    Google Chrome   119.0.6045.124 (Официальная сборка), (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Открыть https://hexlet-products-store.vercel.app/ в браузере
+    2. Открыть  DevTools - вкладка Network
+    3. Добавить в корзину любой товар из каталога
+    4. Перейти в корзину
+    5. Разместить заказ, кликнув Checkout
+  expected-result: |
+    Заказ успешно оформлен
+  actual-result: |
+    Ошибка 500 при попытке оформить заказ
+
+    - summary: |
+    Модальное окно Order placed successfully не закрывается при клике на крестик (Х)
+  environment: |
+    Google Chrome   119.0.6045.124 (Официальная сборка), (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Открыть https://hexlet-products-store.vercel.app/ в браузере
+    2. Открыть  DevTools - вкладка Network
+    3. Добавить в корзину любой товар из каталога
+    4. Перейти в корзину
+    5. Разместить заказ, кликнув Checkout
+    6. Закрыть модальное окно Order placed successfully кликнув на крестик (Х)
+  expected-result: |
+    Модальное окно закрылось
+  actual-result: |
+    Модальное окно не закрылось
